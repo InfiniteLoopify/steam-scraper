@@ -1,5 +1,5 @@
 
-<!-- TODO: REPLACE ALL `steam-scraper`, `steam-scraper`, `Scrape all Steam games on sale `. FILL "about the project" and uncomment hidden sections if needed -->
+<!-- TODO: REPLACE ALL `steam-scraper`, `Steam Sales Scraper`, `Scrape all Steam games on sale `. FILL "about the project" and uncomment hidden sections if needed -->
 <a name="readme-top"></a>
 
 <!-- [![Contributors][contributors-shield]][contributors-url] -->
@@ -16,7 +16,7 @@
   <!-- <a href="https://github.com/InfiniteLoopify/steam-scraper">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
-<h3 align="center">steam-scraper</h3>
+<h3 align="center">Steam Sales Scraper</h3>
 
   <p align="center">
     Scrape all Steam games on sale

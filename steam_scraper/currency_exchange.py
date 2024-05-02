@@ -2,7 +2,7 @@ import requests
 from datetime import datetime, timedelta
 from enum import Flag, auto
 
-import src.utils as utils
+import steam_scraper.utils as utils
 
 """
 https://manage.exchangeratesapi.io/

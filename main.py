@@ -1,5 +1,5 @@
-from src.gui import TestApp
-from src.scrapper import Scrapper
+from steam_scraper.gui import TestApp
+from steam_scraper.scrapper import Scrapper
 
 if __name__ == "__main__":
     steam_scrapper = Scrapper()

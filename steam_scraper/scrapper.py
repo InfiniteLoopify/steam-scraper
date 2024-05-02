@@ -17,8 +17,8 @@ from selenium_stealth import stealth
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 
-import src.utils as utils
-from src.currency_exchange import CurrencyExchange, CurrencyType
+import steam_scraper.utils as utils
+from steam_scraper.currency_exchange import CurrencyExchange, CurrencyType
 
 
 class Scrapper:

@@ -1,8 +1,6 @@
 from tkinter import Frame, BOTH
 from pandastable import Table, TableModel
 
-from scrapper import Scrapper
-
 
 class TestApp(Frame):
     """Basic test frame for the table"""
@@ -11,7 +9,7 @@ class TestApp(Frame):
         self.parent = parent
         Frame.__init__(self)
         self.main = self.master
-        self.main.state("zoomed")
+        # self.main.state("zoomed")
         self.main.title("Table app")
         f = Frame(self.main)
         f.pack(fill=BOTH, expand=1)
@@ -50,11 +48,3 @@ class TestApp(Frame):
         self.table.setColumnColors(cols=[8, 9, 10], clr=color_light)
         self.table.setRowColors(rows=index, cols=[8], clr=color_dark)
         self.table.resizeColumn(8, 20)
-
-
-if __name__ == "__main__":
-    steam_scrapper = Scrapper()
-    df = steam_scrapper.run(delay_in_hours=0)
-
-    app = TestApp(df=df)
-    app.mainloop()

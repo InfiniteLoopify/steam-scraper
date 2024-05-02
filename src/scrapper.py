@@ -1,8 +1,6 @@
 import pandas as pd
 import time
 from pathlib import Path
-import utils
-from currency_exchange import CurrencyExchange, CurrencyType
 from datetime import datetime
 import os
 import traceback
@@ -14,11 +12,13 @@ from selenium.common import NoSuchElementException
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-
-from webdriver_manager.chrome import ChromeDriverManager, ChromeDriver
 from selenium_stealth import stealth
 
+from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
+
+import src.utils as utils
+from src.currency_exchange import CurrencyExchange, CurrencyType
 
 
 class Scrapper:
@@ -53,7 +53,9 @@ class Scrapper:
 
         options = webdriver.ChromeOptions()
         options.add_argument("start-maximized")
-        path = (Path(os.getenv("LOCALAPPDATA")) / "Google/Chrome/User Data").resolve()
+        path = (
+            Path(os.getenv("LOCALAPPDATA", "")) / "Google/Chrome/User Data"
+        ).resolve()
         options.add_argument(f"--user-data-dir={path}")
         # options.add_argument('--profile-directory=Profile 2')
 
@@ -322,5 +324,4 @@ if __name__ == "__main__":
     dfs = steam_scrapper.run(delay_in_hours=4)
 
     for df in dfs:
-        print(df.info())
         print(df)

@@ -1,16 +1,9 @@
-# This is a sample Python script.
+from src.gui import TestApp
+from src.scrapper import Scrapper
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f"Hi, {name}")  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == "__main__":
-    print_hi("PyCharm")
+    steam_scrapper = Scrapper()
+    df = steam_scrapper.run(delay_in_hours=4)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    app = TestApp(df=df)
+    app.mainloop()

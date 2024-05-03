@@ -146,7 +146,7 @@ To use the program, follow these steps:
     ```bash
     python main.py
     ```
-4. Use `pytest` to run tests in the terminal:
+3. Use `pytest` to run tests in the terminal:
     ```bash
     pytest
     ```

@@ -146,6 +146,10 @@ To use the program, follow these steps:
     ```bash
     python main.py
     ```
+4. Use `pytest` to run tests in the terminal:
+    ```bash
+    pytest
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

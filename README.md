@@ -278,7 +278,7 @@ Project Link: [https://github.com/InfiniteLoopify/steam-scraper](https://github.
 [Fastapi-url]: https://fastapi.tiangolo.com/
 [Pyqt-shield]: https://img.shields.io/badge/PyQt-217346?style=for-the-badge&logo=qt&logoColor=white
 [Pyqt-url]: https://www.riverbankcomputing.com/software/pyqt/
-[Tkinter-shield]: https://img.shields.io/badge/tkinter-000088?style=for-the-badge&logo=python&logoColor=yellow
+[Tkinter-shield]: https://img.shields.io/badge/tkinter-000088?style=for-the-badge&logo=robinhood&logoColor=cccccc
 [Tkinter-url]: https://docs.python.org/3/library/tkinter.html
 [Alpine.js-shield]: https://img.shields.io/badge/alpine.js-2d3441?style=for-the-badge&logo=alpinedotjs&logoColor=%2377c1d2
 [Alpine.js-url]: https://alpinejs.dev/
